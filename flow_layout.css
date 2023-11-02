@@ -1,0 +1,208 @@
+/* 變數宣告 */
+:root {
+    --yellow: #f5deb3ff;
+    /* 後面兩碼為透明度 */
+    --brown: #a52a2aff;
+    --white: #f0f8ffff;
+    --blue: #6495EDff;
+    --gray: #696969ff;
+    --pink: #DB7093;
+}
+
+
+/* 習慣先做歸零設定 */
+body,h1,h2,h3,p,div,table,th,td,span,small,ul,ol,li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: normal;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+/* 再做後面的版面配置 */
+/* 基本設定 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--yellow);
+    padding: 24px 10px;
+    color: var(--gray);
+}
+
+a:link,a:visited {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+/* 版面結構設定 */
+#container {
+    width: 960px;
+    margin: 0 auto;
+    /* 左右置中 */
+}
+#header,#content,#sidebar {
+    margin-bottom: 50px;
+}
+#content {
+    width: 600px;
+    float: left;
+}
+#sidebar {
+    width: 300px;
+    float: right;
+}
+#footer, #header{
+    clear: both;
+}
+/* 頁首設定 */
+#site {
+    float: left;
+}
+#site a{
+    color: var(--gray);
+}
+#site a:hover{
+    text-decoration: none;
+}
+#iconmenu {
+    float: right;
+    text-align: center;
+    font-size: 35px;
+}
+#iconmenu a {
+    margin: 5px;
+    color: var(--gray);
+}
+#iconmenu a:hover{
+    color: var(--blue);
+}
+#headerimg {
+    margin-top: 5px;
+}
+
+/* 標籤設定 */
+#nav {
+    font-size: 14px;
+    background: rgb(0, 0, 0);
+    border-top: solid 2px var(--yellow);
+    overflow: hidden;
+}
+
+#nav a {
+    display: block;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    float: left;
+    color: var(--white);
+    border-right: 3px solid var(--yellow);
+}
+#nav a:hover{
+    background-color: var(--blue);
+}
+
+/* 設定內容 */
+.date{
+    float: right;
+    background-color: var(--blue);
+    text-align: center;
+    color: var(--white);
+    padding: 18px 26px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.date span{
+    display: block;
+    font-size: 2em;
+}
+#content h2{
+    font-size: 1.75em;
+    border-bottom: solid 2px var(--gray);
+    padding-bottom: 4px;
+}
+#content p{
+    line-height: 1.8;
+    text-align: justify;
+}
+.cat{
+    font-size: 0.875em;
+    margin: 10px 0 30px;
+}
+/* 設定右邊側欄 */
+#sidebar {
+    float: right;
+    padding-left: 30px;
+}
+/* 廣告區 */
+.ad_title{
+    font-size: 24px;
+    color: var(--blue);
+    margin-bottom: 15px;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position:2% center;
+    padding-left:40px;
+}
+/* 選單設定 */
+.menu{
+    margin-bottom: 50px;
+}
+.menu h3{
+    font-size: 1.6em;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+.menu ul{
+    border-top: solid 1px var(--gray);
+}
+.menu li{
+    border-bottom: solid 1px var(--gray);
+}
+.menu a{
+    font-size: 18px;
+    color: var(--gray);
+    display: block;
+    padding: 10px 0 10px 20px;
+    background-image: url(images/login.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left:30px;
+}
+.menu a:hover{
+    background-color: var(--pink);
+}
+/* 頁尾設定 */
+#footer {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 10px 10px 20px;
+}
+#footer small{
+    font-size: 0.75em;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+/* 自訂樣式 */
+.mv_10{
+    margin: 10px 0;
+}
